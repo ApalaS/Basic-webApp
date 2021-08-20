@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <title>Wishlist List</title>
+</head>
+
+<body class="has-background-white-ter">
+  <div class="container pt-4">
+    <h1 class="title has-text-centered is-size-2 is-family-code">My<span
+        class="has-text-primary is-italic">Wish</span>List</h1>
+    <h2 class="subtitle has-text-centered is-size-6 is-family-code">with prices and brand names</h2>
+    <form id="clothes-form">
+      <div class="form-group">
+        <label for="item">cloth item</label>
+        <input id="item" type="text" class="input is-primary " placeholder="clothes item">
+      </div>
+      <div class="form-group">
+        <label for="brand">brand name</label>
+        <input id="brand" type="text" class="input is-primary" placeholder="brand name">
+      </div>
+      <div class="form-group">
+        <label for="price">price</label>
+        <input id="price" type="text" class="input is-primary" placeholder="price in Rs.">
+      </div>
+      <input type="submit" value="Add cloth item" class=" btn button is-primary button is-medium is-fullwidth  mt-6"
+        id="btnToAdd">
+      <button class="button is-danger is-outlined is-fullwidth mt-3">
+        <span>Reset</span>
+        <span class="icon is-small">
+          <i class="fas fa-times"></i>
+        </span>
+      </button>
+    </form>
+  </div>
+  <table id="table1" class=" table is-striped table is-fullwidth mt-6">
+    <thead>
+      <tr>
+        <th>S No.</th>
+        <th>items</th>
+        <th>brand</th>
+        <th>price</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+
+    </tbody>
+</body>
+<script src="js/clothes.js"></script>
+
+</html>
